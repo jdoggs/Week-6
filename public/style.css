@@ -1,0 +1,114 @@
+body {
+    /* background-blend-mode:-moz-repeating-linear-gradient() */
+    background-color: #faf6f6;
+    display: flex;
+    justify-content: left; 
+    align-items: center; 
+    height:80vh;
+    margin: 65px;
+    /* background-image: 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+
+}
+#canvas-container {
+	display: block;
+	position: absolute;
+	left: 0;
+    top: 0;
+    z-index: -1;
+    
+}
+#header {
+    font-size: 70px;
+    text-align:center;
+    /* font-family:Arial; */
+    letter-spacing:5px;
+    border-style: dashed;
+    border-width: 10px;
+    margin-block: 30px;
+
+    /* color:rgb(64, 1, 134); */
+}
+#directions {
+    text-align: center;
+    font-size: 30px;
+    padding-left: 60px;
+}
+/* .handimage {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+} */
+.coin_flip {
+    display: flexbox;
+    flex-direction: row;
+    padding-right: 150px;
+    margin-left: auto;
+    justify-content: center;
+}
+.coin_button {
+    display: flexbox;
+    flex-direction: row-reverse;
+}
+
+.coin_image {
+
+    position: relative;
+
+}
+#button {
+    background-color: #e74e1f;
+    color: #fff;
+    padding: 10px  10px;
+    border-radius: 40px;
+    display: flexbox;
+    transition: 0.5s;
+    cursor:pointer;
+    font-weight: 150;
+}
+#button:hover {
+    opacity: 0.5;
+    background-color: #14e452;
+}
+#word {
+    display: inline-flex;
+    /* font-size: 40px; */
+    color:#e74e1f;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 60px;
+}
+/* #canvas-image {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+} */
+.animate-coin {
+    animation: flip 2s 1;
+}
+@keyframes flip {
+    0% {
+        transfrom: rotateX(0deg);
+    }
+    50% {
+        transform: rotateX(3600deg);
+    }
+    100% {
+        transform: rotateX(7200deg);
+    }
+}
+/* #granim-canvas {
+    width: 100%;
+    height: 100%;
+} */
+.handpointer {
+    margin-left: auto;
+    justify-content: center;
+}
